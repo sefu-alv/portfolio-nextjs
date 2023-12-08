@@ -2,3 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'aos/dist/aos.css';
+/* styles/global.css */
+
+/* @keyframes moveBackground1 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes moveBackground2 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animate-move-background1 {
+    animation: moveBackground1 8s linear infinite alternate;
+  }
+  
+  .animate-move-background2 {
+    animation: moveBackground2 10s linear infinite alternate;
+  }
+   */
