@@ -38,7 +38,7 @@ const fadeInUpVariantsWithDelay = (delay: number) => ({
 
 export default function Hero() {
   return (
-    <section className="relative flex justify-center w-full mt-[10rem] sm:mt-[6rem] md:mt-[10rem] xl:mt-[7rem] 4xl:mt-[16rem] lg:flex-row min-h-screen gap-[3rem]">
+    <section className="relative flex justify-center lg:mt-[-8rem] items-center w-full h-screen lg:flex-row gap-[3rem]">
       <div className="  lg:text-left  ">
         <motion.p
           variants={fadeInUpVariants}
