@@ -14,7 +14,7 @@ animate={{ opacity: 1, y: 0 }}
 transition={{ duration: 0.5 }}
 className='shadow-black/[0.03] backdrop-blur-[0.5rem] sticky top-0 z-50'
 >
-<nav className="bg-white sticky ">
+<nav className="bg-transparent sticky ">
 <div className="w-full px-2 sm:px-6 lg:px-8">
   <div className="relative flex items-center justify-between h-16 w-full">
     <div className=" inset-y-0 left-0 flex items-center sm:hidden">
@@ -37,24 +37,24 @@ className='shadow-black/[0.03] backdrop-blur-[0.5rem] sticky top-0 z-50'
   </div>
       <div className="hidden sm:block sm:ml-6">
                
-               <div className="flex space-x-4">
-                  <a href="#Home" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2 rounded-md text-sm font-medium">
+               <div className="flex space-x-4 text-xl font-medium">
+                  <a href="#Home" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2 rounded-md">
                      <FaHome/>
                      <span>Home</span>
                   </a>
-                  <a href="#About" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2  rounded-md text-sm font-medium">
+                  <a href="#About" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2  rounded-md">
                      <IoPersonSharp/>
                      <span>About</span>
                   </a>
-                  <a href="#Projects" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2  rounded-md text-sm font-medium">
+                  <a href="#Projects" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2  rounded-md">
                      <FaFolder/>
                      <span>Projects</span>
                   </a>
-                  <a href="#Skills" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2  rounded-md text-sm font-medium">
+                  <a href="#Skills" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2  rounded-md">
                      <FaUserGear/>
                      <span>Skills</span>
                   </a>
-                  <a href="#Contact" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2  gap-2 rounded-md text-sm font-medium">
+                  <a href="#Contact" className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2  gap-2 rounded-md">
                      <MdEmail/>
                      <span>Contact</span>
                   </a>

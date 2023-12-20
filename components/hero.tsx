@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 import { Button } from "@nextui-org/react";
 import Image from "next/image";
@@ -37,8 +37,35 @@ const fadeInUpVariantsWithDelay = (delay: number) => ({
 });
 
 export default function Hero() {
+
+  const [opacity, setOpacity] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let scrollTop = window.scrollY;
+      let height = window.innerHeight;
+      let opacity = 1 - scrollTop / height;
+      setOpacity(opacity);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToNextSection = () => {
+    const nextSection = document.getElementById("about");
+    nextSection?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <section className="relative flex justify-center lg:mt-[-8rem] items-center w-full h-screen lg:flex-row gap-[3rem]">
+    <section
+    className="sticky top-0 z-10 flex justify-center items-center w-full h-screen lg:flex-row gap-[3rem]"
+    style={{ opacity: opacity }}
+  >
+      
       <div className="  lg:text-left  ">
         <motion.p
           variants={fadeInUpVariants}
@@ -108,10 +135,11 @@ export default function Hero() {
             <span className="text-black text-2xl">Tap to see more about me</span>
           </p>
           <svg
-            className="absolute left-0 right-0 animate-bounce mx-auto mt-[5rem] md:mt-[5rem] lg:mt-[8rem] w-[4rem] h-[4rem]  lg:w-[6rem] lg:h-[6rem]"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-          >
+  onClick={scrollToNextSection}
+  className="absolute left-0 right-0 animate-bounce mx-auto mt-[5rem] md:mt-[5rem] lg:mt-[8rem] w-[4rem] h-[4rem]  lg:w-[6rem] lg:h-[6rem]"
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 32 32"
+>
             <title>10-Arrow Down</title>
             <g id="_10-Arrow_Down" data-name="10-Arrow Down">
               <path d="M25,0H7A7,7,0,0,0,0,7V25a7,7,0,0,0,7,7H25a7,7,0,0,0,7-7V7A7,7,0,0,0,25,0Zm5,25a5,5,0,0,1-5,5H7a5,5,0,0,1-5-5V7A5,5,0,0,1,7,2H25a5,5,0,0,1,5,5Z" />
