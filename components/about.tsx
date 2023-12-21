@@ -9,7 +9,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative z-20 w-full bg-white mt-screen px-8 h-screen"
+      className=" z-20 w-full bg-white mt-screen px-8 min-h-screen"
     >
       <div className="flex justify-center ">
         <p className="text-2xl xs:text-4xl lg:text-7xl font-bold text-black mt-[4rem] lg:mt-[10rem] 3xl:mt-[15rem]">
@@ -18,7 +18,7 @@ export default function About() {
       </div>
       <div className="flex flex-col md:flex-row justify-center lg:mt-[12rem] gap-8 items-center mt-[2rem] ">
         <img
-          className="w-32 h-32 sm:w-64 sm:h-64 md:w-96 md:h-96 lg:w-[32rem] lg:h-[32rem] rounded-full object-cover"
+          className="w-32 h-32 lg:w-64 lg:h-64 md:w-96 md:h-96 2xl:w-[32rem] 2xl:h-[32rem] rounded-full object-cover"
           src="pfp.png"
           alt="profile"
           loading="lazy"
