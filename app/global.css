@@ -12,31 +12,14 @@
     transform: scale(1.1) translateY(-5px);
   }
 }
-/* styles/global.css */
-
-/* @keyframes moveBackground1 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+      display: none;
   }
-  
-  @keyframes moveBackground2 {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(100%);
-    }
-  }
-  
-  .animate-move-background1 {
-    animation: moveBackground1 8s linear infinite alternate;
-  }
-  
-  .animate-move-background2 {
-    animation: moveBackground2 10s linear infinite alternate;
-  }
-   */
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+}

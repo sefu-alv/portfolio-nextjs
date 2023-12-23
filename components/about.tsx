@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Button } from "@nextui-org/react";
+
 import { TfiDownload } from "react-icons/tfi";
 
 import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";

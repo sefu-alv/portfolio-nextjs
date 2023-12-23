@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "@nextui-org/react": "^2.2.9",
     "aos": "^2.3.4",
     "framer-motion": "^10.16.14",
@@ -17,7 +18,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-    "react-intersection-observer": "^9.5.3"
+    "react-intersection-observer": "^9.5.3",
+    "react-responsive-carousel": "^3.2.23"
   },
   "devDependencies": {
     "@types/node": "^20",

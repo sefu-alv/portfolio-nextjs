@@ -1,8 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
-import { Button } from "@nextui-org/react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const fadeInUpVariants = {
@@ -39,21 +36,7 @@ const fadeInUpVariantsWithDelay = (delay: number) => ({
 export default function Hero() {
   const [opacity, setOpacity] = useState(1);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     let scrollTop = window.scrollY;
-  //     let height = window.innerHeight;
-  //     let opacity = 1 - scrollTop / height;
-  //     setOpacity(opacity);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
+ 
   const scrollToNextSection = () => {
     const nextSection = document.getElementById("about");
     nextSection?.scrollIntoView({ behavior: "smooth" });
@@ -79,7 +62,7 @@ export default function Hero() {
               variants={fadeInUpVariantsWithDelay(0.3)}
               initial="initial"
               animate="animate"
-              className=" text-3xl font-bold xs:text-5xl sm:text-5xl md:text-6xl 2xl:text-9xl"
+              className=" text-3xl font-bold xs:text-5xl sm:text-5xl md:text-6xl 2xl:text-9xl text-white"
             >
               Sefufim Alvarez{" "}
             </motion.span>

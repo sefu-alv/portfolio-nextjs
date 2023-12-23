@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className={`flex flex-col min-h-screen ${inter.className} bg-[#292a2c] `}>
+    <div className={`flex flex-col min-h-screen ${inter.className} bg-gradient-to-r from-indigo-500`}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
