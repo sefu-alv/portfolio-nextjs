@@ -27,13 +27,13 @@ export default function ProjectDisplay() {
   return (
     <div className='flex w-full flex-wrap justify-center min-h-screen'>
       <div className="h-screen w-full flex justify-center items-center">
-        <div className="weather w-[50rem] h-[50rem]"></div>
+        <div className="weather w-[25rem] h-[25rem] lg:w-[50rem] lg:h-[50rem]"></div>
       </div>
       <div className="h-screen w-full flex justify-center items-center">
-        <div className="weather2 w-[50rem] h-[50rem]"></div>
+        <div className="weather2 w-[25rem] h-[25rem] lg:w-[50rem] lg:h-[50rem]"></div>
       </div>
       <div className="h-screen w-full flex justify-center items-center">
-        <div className="weather3 w-[50rem] h-[50rem]"></div>
+        <div className="weather3 w-[25rem] h-[25rem] lg:w-[50rem] lg:h-[50rem]"></div>
       </div>
     </div>
   )
