@@ -29,29 +29,34 @@ export const links = [
   },
 ] as const;
 
-
 export const projectsData = [
   {
     title: "Movie Nest",
     description:
-      "A movie database app. It has features like searching, save for later , sorting  and pagination. I was one of four developers that created this.",
+      "This website allows users to search for movies, see detailed information about each movie, including cast, ratings. It also provides recommendations based on user preferences. Built with JavaScript, Foundation framework and The Movie Database (TMDB) API.",
     tags: ["HTML", "Foundation", "CSS", "JavaScript", "jQuery", "API"],
     imageUrl: "/place.png",
   },
   {
     title: "Game Yap",
     description:
-      "A social media app for gamers. It has features like posting, commenting, and deleting comments. This also features a login system. I was one of three developers that created this.",
+      "This website allows users to search for games, see detailed information about each game, including ratings, reviews, It also has a authentication. Built with JavaScript, Tailwind CSS, MYSQL and RAWG API.",
     tags: ["HTML", "CSS", "Tailwind", "JavaScript", "MySql", "API"],
-    imageUrl:"/place.png",
+    imageUrl: "/place.png",
   },
   {
     title: "Weather App",
     description:
-      "A weather app that shows the current weather and the forecast for the next 5 days. I was the sole developer that created this.",
+      "This app allows user to check the weather and their 5 day forecast built with JavaScript and APIs",
     tags: ["HTML", "CSS", "JavaScript", "API"],
-    imageUrl:"/place.png",
+    imageUrl: "/place.png",
   },
+  {
+    title: "Social Network API",
+    description: 'This API allows users to create profiles, post messages, delete messages and become friends. Built with Node.js, Express, and MongoDB.',
+    tags: ["Node.js", "Express", "MongoDB"],
+    imageUrl: "/place.png",
+  }
 ] as const;
 
 export const skillsData = [
