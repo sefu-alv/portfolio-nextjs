@@ -16,6 +16,21 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      translate: {
+        '-50': '-50%',
+        '-300': '-300px',
+      },
+      grayscale: {
+        '0.5': '0.5',
+      },
+      flex: {
+        '1': '1 1 0%',
+        'auto': '1 1 auto',
+        'initial': '0 1 auto',
+        'none': 'none',
+        '2': '2 2 0%',
+        'grow': '1 1 100%',
+      },
       screens: {
         'xxs' : '350px',
         'xs' : '400px',

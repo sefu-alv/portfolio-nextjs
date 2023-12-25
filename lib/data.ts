@@ -36,7 +36,7 @@ export const projectsData = [
     description:
       "A movie database app. It has features like searching, save for later , sorting  and pagination. I was one of four developers that created this.",
     tags: ["HTML", "Foundation", "CSS", "JavaScript", "jQuery", "API"],
-    // imageUrl:,
+    imageUrl: "/place.png",
   },
   {
     title: "Game Yap",
