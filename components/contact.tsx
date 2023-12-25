@@ -22,7 +22,7 @@ export default function Contact() {
             <label className="block text-white text-sm font-bold mb-2" htmlFor="message">
               Message
             </label>
-            <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message" rows="4" value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+            <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your message" rows={4} value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
           </div>
           {errorMessage && <p>{errorMessage}</p>}
           <div className="flex items-center justify-between">
