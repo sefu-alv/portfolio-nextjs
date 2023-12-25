@@ -1,49 +1,40 @@
-import { useRef } from "react";
-import { motion, useScroll, useSpring, useTransform, MotionValue } from "framer-motion";
-import Image from "next/image";
+'use client';
+import { useRef, useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { projectsData } from '../lib/data';
 
-function useParallax(value: MotionValue<number>, distance: number) {
-  return useTransform(value, [0, 1], [-distance, distance]);
-}
+gsap.registerPlugin(ScrollTrigger);
 
-function ProjectImage({ title, imageUrl, description }: { title: string, imageUrl: string, description: string }) {
-  const ref = useRef(null);
-  const { scrollYProgress } = useScroll({ target: ref });
-  const y = useParallax(scrollYProgress, 300);
-
-  return (
-    <section className="h-screen flex justify-center flex-col-reverse w-full items-center relative">
-      <div ref={ref} className=" h-96 relative max-h-90vh m-5 bg-white overflow-hidden">
-        <Image
-          src={imageUrl}
-          alt={title}
-          width={500}
-          height={500}
-        />
-      </div>
-      <div>
-      <motion.p className="font-normal text-2xl w-1/4" style={{ y }}>{title}</motion.p>
-      <motion.p className="font-normal text-2xl w-1/4" style={{ y }}>{description}</motion.p>
-      </div>
-     
-    </section>
-  );
-}
-
-export default function projectDisplay() {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001
-  });
+export default function ProjectDisplay() {
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const containers = document.querySelectorAll(".weather, .weather2, .weather3");
+      containers.forEach(container => {
+        gsap.to(container, {
+          x: () => -(container as HTMLElement).offsetWidth - document.documentElement.clientWidth,
+          scrollTrigger: {
+            trigger: container,
+            pin: true,
+            scrub: 1,
+            end: () => "+=" + (container as HTMLElement).offsetWidth
+          }
+        });
+      });
+    }
+  }, []);
 
   return (
-    <>
-      {projectsData.map((project, index) => (
-        <ProjectImage key={index} title={project.title} imageUrl={project.imageUrl} description={project.description} />
-      ))}
-    </>
-  );
+    <div className='flex w-full flex-wrap justify-center min-h-screen'>
+      <div className="h-screen w-full flex justify-center items-center">
+        <div className="weather w-[50rem] h-[50rem]"></div>
+      </div>
+      <div className="h-screen w-full flex justify-center items-center">
+        <div className="weather2 w-[50rem] h-[50rem]"></div>
+      </div>
+      <div className="h-screen w-full flex justify-center items-center">
+        <div className="weather3 w-[50rem] h-[50rem]"></div>
+      </div>
+    </div>
+  )
 }

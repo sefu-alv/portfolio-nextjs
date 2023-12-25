@@ -43,14 +43,14 @@ export const projectsData = [
     description:
       "A social media app for gamers. It has features like posting, commenting, and deleting comments. This also features a login system. I was one of three developers that created this.",
     tags: ["HTML", "CSS", "Tailwind", "JavaScript", "MySql", "API"],
-    // imageUrl:,
+    imageUrl:"/place.png",
   },
   {
     title: "Weather App",
     description:
       "A weather app that shows the current weather and the forecast for the next 5 days. I was the sole developer that created this.",
     tags: ["HTML", "CSS", "JavaScript", "API"],
-    // imageUrl:,
+    imageUrl:"/place.png",
   },
 ] as const;
 
