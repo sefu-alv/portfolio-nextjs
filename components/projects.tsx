@@ -15,13 +15,13 @@ export default function ProjectDisplay() {
           gsap.to(container, {
             x: () =>
               index % 2 === 0
-                ? -(container as HTMLElement).offsetWidth
-                : (container as HTMLElement).offsetWidth,
-            scrollTrigger: {
-              trigger: container,
-              pin: true,
-              scrub: 1,
-              end: () => "+=" + (container as HTMLElement).offsetWidth,
+              ? -window.innerWidth
+              : window.innerWidth,
+          scrollTrigger: {
+            trigger: container,
+            pin: true,
+            scrub: 1,
+            end: () => "+=" + window.innerWidth / 2,
             },
           });
         });
