@@ -58,5 +58,14 @@
     box-shadow:  11px 11px 22px #2f4252,
                  -11px -11px 22px #bbffff;
   }
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: var(--red);
+    transform-origin: 0%;
+  }
   
     }

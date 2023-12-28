@@ -10,16 +10,16 @@ export default function About() {
   return (
     <section
       id="about"
-      className=" z-20 w-full bg-white mt-screen  min-h-screen"
+      className=" z-20 w-full bg-white mt-screen  min-h-screen px-8"
     >
       <div className="flex justify-start ">
-        <p className="text-2xl xs:text-4xl lg:text-7xl font-bold text-black mt-[4rem] lg:mt-[10rem] 3xl:mt-[10rem]">
+        <p className="text-2xl xs:text-4xl lg:text-7xl font-bold text-black mt-[4rem] lg:mt-[5rem] 3xl:mt-[10rem]">
           About Me
         </p>
         
       </div>
       <hr className="w-[100%] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-      <div className="flex flex-col md:flex-row justify-center lg:mt-[12rem] gap-8 items-center mt-[2rem] ">
+      <div className="flex flex-col md:flex-row justify-center lg:mt-[5rem] gap-8 items-center mt-[2rem] ">
         <img
           className="w-32 h-32 lg:w-64 lg:h-64 md:w-96 md:h-96 2xl:w-[32rem] 2xl:h-[32rem] rounded-full object-cover"
           src="pfp.png"
@@ -27,8 +27,8 @@ export default function About() {
           loading="lazy"
         />
 
-        <div className="flex flex-col w-[95%] md:w-1/2 2xl:w-[40%] text-[12px] xs:text-base lg:text-3xl">
-          <p className="text-[12px] xs:text-base lg:text-2xl">
+        <div className="flex flex-col w-[95%] md:w-1/2 2xl:w-[40%] text-[12px] xs:text-base lg:text-2xl">
+          <p>
             Hi there &apos;👋🏼&apos;, I&apos;m{" "}
             <span className="text-[#FFD700]">Sefufim Alvarez</span>! I&apos;m a
             Fullstack developer from Salem, Oregon. After switching majors
