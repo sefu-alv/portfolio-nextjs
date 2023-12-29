@@ -35,21 +35,21 @@ export const projectsData = [
     description:
       "This website allows users to search for movies, see detailed information about each movie, including cast, ratings. It also provides recommendations based on user preferences. Built with JavaScript, Foundation framework and The Movie Database (TMDB) API.",
     tags: ["HTML", "Foundation", "CSS", "JavaScript", "jQuery", "API"],
-    imageUrl: "/place.png",
+    imageUrl: "/movienest.svg",
   },
   {
     title: "Game Yap",
     description:
       "This website allows users to search for games, see detailed information about each game, including ratings, reviews, It also has a authentication. Built with JavaScript, Tailwind CSS, MYSQL and RAWG API.",
     tags: ["HTML", "CSS", "Tailwind", "JavaScript", "MySql", "API"],
-    imageUrl: "/place.png",
+    imageUrl: "/gameYap.svg",
   },
   {
     title: "Weather App",
     description:
       "This app allows user to check the weather and their 5 day forecast built with JavaScript and APIs",
     tags: ["HTML", "CSS", "JavaScript", "API"],
-    imageUrl: "/place.png",
+    imageUrl: "/weather.svg",
   },
   {
     title: "Social Network API",

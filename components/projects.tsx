@@ -9,23 +9,20 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ProjectDisplay() {
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setTimeout(() => {
-        const containers = document.querySelectorAll(".project");
-        containers.forEach((container, index) => {
-          gsap.to(container, {
-            x: () =>
-              index % 2 === 0
-              ? -window.innerWidth
-              : window.innerWidth,
+      const containers = document.querySelectorAll(".project");
+      containers.forEach((container) => {
+        gsap.to(container, {
+          x: () =>
+            -(container as HTMLElement).offsetWidth -
+            document.documentElement.clientWidth,
           scrollTrigger: {
             trigger: container,
             pin: true,
             scrub: 1,
-            end: () => "+=" + window.innerWidth / 2,
-            },
-          });
+            end: () => "+=" + (container as HTMLElement).offsetWidth,
+          },
         });
-      }, 0);
+      });
     }
   }, []);
 
@@ -43,16 +40,16 @@ export default function ProjectDisplay() {
             key={index}
             className="project h-screen w-full flex flex-col md:flex-row justify-center items-center"
           >
-            <div className="w-full md:w-[45%] h-screen flex items-center">
+            <div className="w-full md:w-[45%] h-[35rem] items-center">
               <Image
                 src={project.imageUrl}
                 alt={project.title}
-                width={900}
-                height={500}
+                width={1000}
+                height={600}
                 className="object-cover"
               />
             </div>
-            <div className="w-full md:w-[30%] h-[100%] p-4 flex items-start sm:place-items-center justify-around">
+            <div className="w-full md:w-[30%] h-[100%] p-4 flex items-start sm:items-center">
               <div className="flex flex-wrap">
                 <p className="text-5xl font-bold">{project.title}</p>
                 <p>{project.description}</p>
