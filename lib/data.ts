@@ -52,10 +52,10 @@ export const projectsData = [
     imageUrl: "/weather.svg",
   },
   {
-    title: "Social Network API",
-    description: 'This API allows users to create profiles, post messages, delete messages and become friends. Built with Node.js, Express, and MongoDB.',
-    tags: ["Node.js", "Express", "MongoDB"],
-    imageUrl: "/place.png",
+    title: "Note Taker",
+    description: 'This app allows user to write, save and delete notes built with JavaScript, Node.js and Express.js',
+    tags: ["Node.js", "Express", "JavaScript"],
+    imageUrl: "/noteTaker.svg",
   }
 ] as const;
 
