@@ -40,7 +40,7 @@ export default function ProjectDisplay() {
             key={index}
             className="project h-screen w-full flex flex-col md:flex-row justify-center items-center"
           >
-            <div className="w-full md:w-[45%] h-[35rem] items-center">
+            <div className="w-full md:w-[45%] h-[35rem] flex items-center">
               <Image
                 src={project.imageUrl}
                 alt={project.title}
@@ -49,17 +49,27 @@ export default function ProjectDisplay() {
                 className="object-cover"
               />
             </div>
-            <div className="w-full md:w-[30%] h-[100%] p-4 flex items-start sm:items-center">
+            <div className="w-full md:w-[40%] h-[35rem] p-4 flex items-start sm:items-center ">
               <div className="flex flex-wrap">
-                <p className="text-5xl font-bold">{project.title}</p>
-                <p>{project.description}</p>
-                <div className="w-full gap-4 flex flex-wrap">
+                <p className="text-5xl font-bold py-4">{project.title}</p>
+                <p className="py-4">{project.description}</p>
+                <div className="w-full gap-4 flex py-2 flex-wrap">
                   {project.tags.map((tag, i) => (
                     <span key={i}>{tag}</span>
                   ))}
                 </div>
+                <div className="flex gap-x-3">
+                  <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    Live Demo
+                  </button>
+                  <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                    Code 
+                  </button>
+                </div>
               </div>
+              
             </div>
+            
           </div>
         ))}
       </div>
