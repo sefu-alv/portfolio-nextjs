@@ -40,13 +40,13 @@ export default function ProjectDisplay() {
             key={index}
             className="project h-screen w-full flex flex-col md:flex-row justify-center items-center"
           >
-            <div className="w-full md:w-[45%] h-[35rem] flex items-center">
+            <div className="w-full md:w-[45%] h-[25rem] flex items-center">
               <Image
                 src={project.imageUrl}
                 alt={project.title}
                 width={1000}
                 height={600}
-                className="object-cover"
+                className="object-cover images"
               />
             </div>
             <div className="w-full md:w-[40%] h-[35rem] p-4 flex items-start sm:items-center ">

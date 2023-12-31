@@ -67,5 +67,7 @@
     background: var(--red);
     transform-origin: 0%;
   }
-  
+  .images{
+    background-size: cover;
+  }
     }
