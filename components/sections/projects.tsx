@@ -51,8 +51,8 @@ export default function ProjectDisplay() {
             <div className="w-full md:w-[40%] h-[35rem] p-4 flex items-start sm:items-center ">
               <div className="flex flex-wrap">
                 <p className="text-5xl font-bold py-4">{project.title}</p>
-                <p className="py-4">{project.description}</p>
-                <div className="w-full gap-4 flex py-2 flex-wrap">
+                <p className="py-4 text-sm lg:text-xl">{project.description}</p>
+                <div className="w-full gap-4 flex py-2 lg:text-xl flex-wrap">
                   {project.tags.map((tag, i) => (
                     <span key={i}>{tag}</span>
                   ))}
