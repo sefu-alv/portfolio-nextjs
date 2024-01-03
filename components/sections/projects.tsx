@@ -9,15 +9,15 @@ gsap.registerPlugin(ScrollTrigger);
 export default function ProjectDisplay() {
   useEffect(() => {
     const projectElements: Element[] = gsap.utils.toArray('.project') as Element[];
-    
+  
     projectElements.forEach((el: Element) => {
       gsap.from(el, {
         x: '-=100',
         autoAlpha: 0,
-        duration: 1,
+        duration: () => window.innerWidth < 640 ? '.5' : '1',
         scrollTrigger: {
           trigger: el,
-          start: '35% center',
+          start: () => window.innerWidth < 640 ? 'top center' : '35% center',
           end: 'bottom center',
           toggleActions: 'play',
           markers: false,
@@ -25,8 +25,6 @@ export default function ProjectDisplay() {
       });
     });
   }, []);
-  
-
   return (
     <div id="Projects" className="w-full min-h-screen px-8">
       <div className="flex justify-start ">
