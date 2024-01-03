@@ -41,9 +41,10 @@ export default function Hero() {
     const nextSection = document.getElementById("about");
     nextSection?.scrollIntoView({ behavior: "smooth" });
   };
+  
 
   return (
-    <section className=" top-0 z-10 flex justify-center items-center w-full min-h-screen lg:flex-row gap-[3rem] overflow-hidden">
+    <section id="Home" className=" top-0 z-10 flex justify-center items-center w-full min-h-screen lg:flex-row gap-[3rem] overflow-hidden">
       <div className="  lg:text-left  ">
         <motion.p
           variants={fadeInUpVariants}

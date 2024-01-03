@@ -8,26 +8,27 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ProjectDisplay() {
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const containers = document.querySelectorAll(".project");
-      containers.forEach((container) => {
-        gsap.to(container, {
-          x: () =>
-            -(container as HTMLElement).offsetWidth -
-            document.documentElement.clientWidth,
-          scrollTrigger: {
-            trigger: container,
-            pin: true,
-            scrub: 1,
-            end: () => "+=" + (container as HTMLElement).offsetWidth,
-          },
-        });
+    const projectElements: Element[] = gsap.utils.toArray('.project') as Element[];
+    
+    projectElements.forEach((el: Element) => {
+      gsap.from(el, {
+        x: '-=100',
+        autoAlpha: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: el,
+          start: '35% center',
+          end: 'bottom center',
+          toggleActions: 'play',
+          markers: false,
+        },
       });
-    }
+    });
   }, []);
+  
 
   return (
-    <div className="w-full min-h-screen px-8">
+    <div id="Projects" className="w-full min-h-screen px-8">
       <div className="flex justify-start ">
         <p className="text-2xl xs:text-4xl lg:text-7xl font-bold text-black mt-[4rem] lg:mt-[10rem] 3xl:mt-[15rem]">
           Projects
@@ -59,17 +60,31 @@ export default function ProjectDisplay() {
                   ))}
                 </div>
                 <div className="flex gap-x-3">
-                  <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                    Live Demo
-                  </button>
-                  <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                    Code 
-                  </button>
+                  {project.liveUrl && (
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Live Demo
+                      </button>
+                    </a>
+                  )}
+                  {project.repoUrl && (
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+                        Code
+                      </button>
+                    </a>
+                  )}
                 </div>
               </div>
-              
             </div>
-            
           </div>
         ))}
       </div>

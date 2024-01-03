@@ -9,7 +9,7 @@ import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 export default function About() {
   return (
     <section
-      id="about"
+      id="About"
       className=" z-20 w-full bg-white mt-screen  min-h-screen px-8"
     >
       <div className="flex justify-start ">
@@ -49,7 +49,7 @@ export default function About() {
 
           <div className="flex items-center mt-10 mb-5 ">
             <a href="./Resume.pdf">
-              <Button className="bg-grey-700 border-3 border-black w-[10rem] h-[40px] lg:w-[15rem] lg:h-[4rem] text-lg lg:text-2xl">
+              <Button className="bg-grey-700 border-3 border-black w-[10rem] h-[40px] lg:w-[15rem] lg:h-[4rem] text-lg lg:text-2xl ">
                 Resume <TfiDownload />
               </Button>
             </a>
