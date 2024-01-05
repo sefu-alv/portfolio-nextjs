@@ -32,16 +32,16 @@ Technologies Used:
 
 Repository: [:octocat:](https://github.com/sefu-alv/weather-forecast)
 
-### Project 2: :iphone: Social Network API :inbox_tray:
+### Project: :page_facing_up: Note Taker  :pencil2:
 
-Description: This API allows users to create profiles, post messages, delete messages, and become friends. 
+Description: This app allows users to write, save, and delete notes. It is built with JavaScript, Node.js, and Express.js.
 
-Technologies Used: 
+Technologies Used:
 [![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/-Express-000000?logo=express&logoColor=white)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-Repository:  [:octocat:](https://github.com/sefu-alv/social-network-api)
+Repository: [:octocat:](https://github.com/sefu-alv/note-taker)
 
 ### Project 3: :movie_camera: Movie-Nest :clapper:
 
