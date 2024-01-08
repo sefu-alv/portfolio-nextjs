@@ -1,5 +1,6 @@
+"use client";
 import { useState, useEffect, useRef } from "react";
-import { sectionIds } from "./sectionsId";
+import { sectionIds } from "../Nav/sectionsId";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

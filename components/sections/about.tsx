@@ -61,13 +61,13 @@ export default function About() {
                 <SiGithub />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/sefufim-alvarez-a73799286/"
                 className="text-black hover:scale-150 transition-transform duration-500"
               >
                 <SiLinkedin />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/sefufim?igsh=NWhpcTRkNXMxeGVp&utm_source=qr"
                 className="text-black  hover:scale-150 transition-transform duration-500"
               >
                 <SiInstagram />

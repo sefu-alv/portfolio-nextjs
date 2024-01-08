@@ -38,7 +38,7 @@ export default function Hero() {
 
  
   const scrollToNextSection = () => {
-    const nextSection = document.getElementById("about");
+    const nextSection = document.getElementById("About");
     nextSection?.scrollIntoView({ behavior: "smooth" });
   };
   
