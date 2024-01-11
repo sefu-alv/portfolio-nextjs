@@ -2,9 +2,12 @@ import { SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 
 export default function Socials () {
     return (
-        <div className="lg:min-h-screen flex flex-col justify-center items-center gap-16 my-[5rem] w-[90%] lg:w-[35%]">
-          <div className="flex flex-col justify-center">
-          <div className="w-full">
+        <div className="lg:min-h-screen flex flex-col justify-center items-center gap-16 my-[5rem] w-[80%] lg:w-[45%] overflow-hidden">
+          <div>
+            
+
+          </div>
+            <div className="w-full">
                     <h1 className="text-5xl font-extrabold">Let&apos;s Talk</h1>
                     <p className="mt-3">Got any ideas or brand you want developed? If so I&apos;d love to hear about it. </p>
             </div>
@@ -34,9 +37,6 @@ export default function Socials () {
             </div>
           </div>
             </div>
-
-          </div>
-            
 
         </div>
     )

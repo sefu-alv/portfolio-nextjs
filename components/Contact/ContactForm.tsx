@@ -39,11 +39,11 @@ export default function ContactForm() {
   return (
     <div
       id="Contact"
-      className="flex flex-col items-center md:justify-center lg:min-h-screen bg-opacity-50 text-white py-3"
+      className="flex flex-col w-[80%] items-center md:justify-center lg:min-h-screen bg-opacity-50 text-white py-3"
     >
       <h1 className="text-3xl font-bold mb-8">Contact me</h1>
       <form
-        className="w-full max-w-[40rem] bg-slate-500 bg-opacity-50 shadow-2xl rounded px-8 pt-6 pb-8 mb-4"
+        className="w-full bg-slate-500 bg-opacity-50 shadow-2xl rounded px-8 pt-6 pb-8 mb-4"
         onSubmit={sendEmail}
       >
         <div className="mb-4">
