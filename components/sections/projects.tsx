@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -57,16 +59,16 @@ export default function ProjectDisplay() {
                     <span key={i}>{tag}</span>
                   ))}
                 </div>
-                <div className="flex gap-x-3">
+                <div className="flex mt-5 gap-x-5">
                   {project.liveUrl && (
                     <a
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                        Live Demo
-                      </button>
+                      <span className="text-4xl">
+                      <FaExternalLinkAlt />
+                      </span>
                     </a>
                   )}
                   {project.repoUrl && (
@@ -75,9 +77,9 @@ export default function ProjectDisplay() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-                        Code
-                      </button>
+                      <span className="text-4xl">
+                     <FiGithub />
+                     </span>
                     </a>
                   )}
                 </div>

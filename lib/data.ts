@@ -42,7 +42,7 @@ export const projectsData = [
   {
     title: "Game Yap",
     description:
-      "This website allows users to search for games, see detailed information about each game, including ratings, reviews, It also has a authentication. Built with JavaScript, Tailwind CSS, MYSQL and RAWG API.",
+      "Discover and explore games effortlessly on this website. It provides detailed information, ratings, and reviews for each game. Built using JavaScript for interactivity, Tailwind CSS for a clean look, and MYSQL for data management. It utilizes the RAWG API for comprehensive gaming details and includes user authentication for a personalized experience",
     tags: ["HTML", "CSS", "Tailwind", "JavaScript", "MySql", "API"],
     imageUrl: "/gameYap.svg",
     repoUrl: "https://github.com/sefu-alv/Game-Yap?tab=readme-ov-file",
@@ -51,7 +51,7 @@ export const projectsData = [
   {
     title: "Weather App",
     description:
-      "This app allows user to check the weather and their 5 day forecast built with JavaScript and APIs",
+      "This website provides users with real-time weather updates and a comprehensive 5-day forecast. Developed using Bootstrap as its CSS framework, the site seamlessly integrates JavaScript and APIs, ensuring a simple yet effective experience for users to stay updated on weather conditions",
     tags: ["HTML", "CSS", "JavaScript", "API"],
     imageUrl: "/weather.svg",
     repoUrl: "https://github.com/sefu-alv/weather-forecast",
@@ -59,7 +59,7 @@ export const projectsData = [
   },
   {
     title: "Note Taker",
-    description: 'This app allows user to write, save and delete notes built with JavaScript, Node.js and Express.js',
+    description: 'This app enables users to have a simplistic yet effective experience when writing notes, allowing them to save and delete their notes seamlessly. It was built using JavaScript, Node.js, and Express.js',
     tags: ["Node.js", "Express", "JavaScript"],
     imageUrl: "/noteTaker.svg",
     repoUrl: "https://github.com/sefu-alv/note-taker",

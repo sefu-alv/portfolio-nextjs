@@ -29,7 +29,7 @@ export default function About() {
 
         <div className="flex flex-col w-[95%] md:w-1/2 2xl:w-[40%] text-[12px] xs:text-base lg:text-2xl">
           <p>
-            Hi there &apos;👋🏼&apos;, I&apos;m{" "}
+            Hi there 👋🏼, I&apos;m{" "}
             <span className="text-[#FFD700]">Sefufim Alvarez</span>! I&apos;m a
             Fullstack developer from Salem, Oregon. After switching majors
             multiple times, I discovered computer science and have been sold
@@ -53,26 +53,7 @@ export default function About() {
                 Resume <TfiDownload />
               </Button>
             </a>
-            <div className="flex px-2 space-x-6 text-2xl lg:text-5xl">
-              <a
-                href="https://github.com/sefu-alv"
-                className="text-black hover:scale-150 transition-transform duration-500"
-              >
-                <SiGithub />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sefufim-alvarez-a73799286/"
-                className="text-black hover:scale-150 transition-transform duration-500"
-              >
-                <SiLinkedin />
-              </a>
-              <a
-                href="https://www.instagram.com/sefufim?igsh=NWhpcTRkNXMxeGVp&utm_source=qr"
-                className="text-black  hover:scale-150 transition-transform duration-500"
-              >
-                <SiInstagram />
-              </a>
-            </div>
+           
           </div>
         </div>
       </div>
