@@ -39,7 +39,7 @@ export default function ContactForm() {
   return (
     <div
       id="Contact"
-      className="flex flex-col items-center justify-center min-h-screen bg-opacity-50 text-white py-3"
+      className="flex flex-col items-center md:justify-center lg:min-h-screen bg-opacity-50 text-white py-3"
     >
       <h1 className="text-3xl font-bold mb-8">Contact me</h1>
       <form

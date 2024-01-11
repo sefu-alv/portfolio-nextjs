@@ -39,9 +39,9 @@ export default function ProjectDisplay() {
         {projectsData.map((project, index) => (
           <div
             key={index}
-            className="project h-screen w-full flex flex-col md:flex-row justify-center items-center"
+            className="project h-screen w-full flex flex-col lg:flex-row justify-center items-center"
           >
-            <div className="w-full md:w-[45%] h-[25rem] flex items-center">
+            <div className="w-full lg:w-[45%] h-[25rem] flex items-center">
               <Image
                 src={project.imageUrl}
                 alt={project.title}
@@ -50,7 +50,7 @@ export default function ProjectDisplay() {
                 className="object-cover images"
               />
             </div>
-            <div className="w-full md:w-[40%] h-[35rem] p-4 flex items-start sm:items-center ">
+            <div className="w-full lg:w-[40%] h-[35rem] p-4 flex items-start sm:items-center ">
               <div className="flex flex-wrap">
                 <p className="text-5xl font-bold py-4">{project.title}</p>
                 <p className="py-4 text-sm lg:text-xl">{project.description}</p>
@@ -66,7 +66,7 @@ export default function ProjectDisplay() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span className="text-4xl">
+                      <span className="text-2xl lg:text-3xl">
                       <FaExternalLinkAlt />
                       </span>
                     </a>
@@ -77,7 +77,7 @@ export default function ProjectDisplay() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span className="text-4xl">
+                      <span className="text-2xl lg:text-3xl">
                      <FiGithub />
                      </span>
                     </a>

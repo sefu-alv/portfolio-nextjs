@@ -19,9 +19,9 @@ export default function About() {
         
       </div>
       <hr className="w-[100%] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-      <div className="flex flex-col md:flex-row justify-center lg:mt-[5rem] gap-8 items-center mt-[2rem] ">
+      <div className="flex flex-col min-h-screen lg:flex-row justify-center lg:mt-[5rem] gap-8 items-center mt-[2rem] ">
         <img
-          className="w-32 h-32 lg:w-64 lg:h-64 md:w-96 md:h-96 2xl:w-[32rem] 2xl:h-[32rem] rounded-full object-cover"
+          className="w-32 h-32 lg:w-64 lg:h-64 md:w-96 md:h-96 mb-[2rem] 2xl:w-[32rem] 2xl:h-[32rem] rounded-full object-cover"
           src="pfp.png"
           alt="profile"
           loading="lazy"
