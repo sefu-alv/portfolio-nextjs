@@ -59,13 +59,6 @@ export default function Navbar() {
                     <span>Projects</span>
                   </a>
                   <a
-                    href="#Skills"
-                    className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2 gap-2  rounded-md"
-                  >
-                    <FaUserGear />
-                    <span>Skills</span>
-                  </a>
-                  <a
                     href="#Contact"
                     className="flex items-center text-black hover:bg-gray-700 hover:text-white px-3 py-2  gap-2 rounded-md"
                   >
@@ -102,12 +95,6 @@ export default function Navbar() {
           >
             <FaFolder />
             Projects
-          </a>
-          <a
-            href="#Skills"
-            className="text-black hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-md font-medium flex items-center gap-2"
-          >
-            <FaUserGear /> Skills
           </a>
           <a
             href="#Contact"
