@@ -64,7 +64,14 @@ export const projectsData = [
     imageUrl: "/noteTaker.svg",
     repoUrl: "https://github.com/sefu-alv/note-taker",
     liveUrl: "https://notes11-ad7760559b35.herokuapp.com/",
-
+  },
+  {
+    title: "Spend Smart",
+    description: "This website empowers users to manage their finances effectively by providing a seamless platform for tracking both income and expenses. Users can effortlessly add and categorize their financial transactions, which are then showcased on a user-friendly dashboard. The dynamic dashboard not only displays a detailed overview of income and expenses but also visualizes the financial data through interactive graphs powered by ChartsJS. In addition to personal finance management, Spend Smart goes beyond by offering real-time information on the current exchange rate for USD, allowing users to stay informed about currency fluctuations. Moreover, users can access market data for major companies, enabling them to stay updated on stock performances and make more informed financial decisions. ",
+    tags: ["Node.js", "MongoDb", "JavaScript" , "Tailwind CSS" , "React", "ChartsJS" , "Api Integration"],
+    imageUrl: "/spendSmart.svg",
+    repoUrl: "https://github.com/sefu-alv/expense-tracker/tree/main",
+    liveUrl: "https://expense-tracker-l0zb.onrender.com",
 
   }
 ] as const;
