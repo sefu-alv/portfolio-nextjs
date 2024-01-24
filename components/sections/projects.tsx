@@ -35,7 +35,7 @@ export default function ProjectDisplay() {
         </p>
       </div>
       <hr className="w-[100%] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
-      <div className="flex w-full flex-wrap justify-center">
+      <div className="flex w-full flex-wrap justify-center mb-[25rem] xs:mb-10 md:mb-7">
         {projectsData.map((project, index) => (
           <div
             key={index}
