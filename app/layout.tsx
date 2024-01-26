@@ -18,6 +18,7 @@ export default function RootLayout({
     >
       <Head>
         <title>Sefufim</title>
+        <meta name="description" content="Hi there! I'm Sefufim Alvarez, a Fullstack Developer. This is my website where I share my journey in web development. Join me as I bring ideas to life through code and creativity." />
         <meta name="keyword" content="portfolio, typescript, developer, react, nextjs" />
         <meta name="google-site-verification" content="Z94gNptf5Vpn91g8H3nlkGf_DZXKZORD-HY52DTVqn0" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

@@ -14,7 +14,7 @@
     "@nextui-org/react": "^2.2.9",
     "aos": "^2.3.4",
     "emailjs-com": "^3.2.0",
-    "framer-motion": "^10.16.14",
+    "framer-motion": "^10.18.0",
     "gasp": "^0.0.2",
     "gsap": "^3.12.4",
     "next": "14.0.3",
@@ -23,7 +23,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
     "react-intersection-observer": "^9.5.3",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive": "^9.0.2",
+    "react-responsive-carousel": "^3.2.23",
+    "react-spinners": "^0.13.8"
   },
   "devDependencies": {
     "@types/node": "^20",
