@@ -1,9 +1,20 @@
-import ContactValidation from "../../hooks/formValidation";
+import { ContactValidation } from "../../hooks/formValidation";
 import emailjs from "emailjs-com";
-
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import PacmanLoader from "react-spinners/PacmanLoader";
 
 export default function ContactForm() {
-  
+  const [status, setStatus] = useState("");
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (status) {
+      setIsVisible(true);
+      setTimeout(() => setIsVisible(false), 3000);
+    }
+  }, [status]);
+
   const {
     name,
     setName,
@@ -29,9 +40,14 @@ export default function ContactForm() {
     emailjs.sendForm(serviceId, templateId, e.currentTarget, userId).then(
       (result) => {
         console.log(result.text);
+        setStatus("Email sent sucessfully");
+        setName("");
+        setEmail("");
+        setMessage("");
       },
       (error) => {
         console.log(error.text);
+        setStatus("Failed to send email");
       }
     );
   }
@@ -107,6 +123,19 @@ export default function ContactForm() {
           </button>
         </div>
       </form>
+      <motion.div
+        className="status-message text-lg justify-between items-center lg:text-5xl font-bold text-black"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isVisible ? 1 : 0 }}
+      >
+        {" "}
+        <div className="w-full flex flex-row">
+          <div className="block md:hidden">
+          <PacmanLoader color="black" size={13} />
+          </div>
+         <div className="px-[2rem]"> {status}</div>
+        </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function ContactValidation() {
+export function ContactValidation() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
