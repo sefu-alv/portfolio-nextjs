@@ -123,7 +123,7 @@ export default function ContactForm() {
           </button>
         </div>
       </form>
-      {/* <motion.div
+      <motion.div
         className="status-message text-lg justify-between items-center lg:text-5xl font-bold text-black"
         initial={{ opacity: 0 }}
         animate={{ opacity: isVisible ? 1 : 0 }}
@@ -135,7 +135,7 @@ export default function ContactForm() {
           </div>
          <div className="px-[2rem]"> {status}</div>
         </div>
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 }
