@@ -2,7 +2,7 @@ import React from "react";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import "./global.css";
-import Navbar from '../components/nav/navbar';
+import Navbar from "../components/nav/navbar";
 import Footer from "@/components/Footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -18,9 +18,30 @@ export default function RootLayout({
     >
       <Head>
         <title>Sefufim</title>
-        <meta name="description" content="Hi there! I'm Sefufim Alvarez, a Fullstack Developer. This is my website where I share my journey in web development. Join me as I bring ideas to life through code and creativity." />
-        <meta name="keyword" content="portfolio, typescript, developer, react, nextjs" />
-        <meta name="google-site-verification" content="Z94gNptf5Vpn91g8H3nlkGf_DZXKZORD-HY52DTVqn0" />
+        <meta
+          name="google-site-verification"
+          content="Z94gNptf5Vpn91g8H3nlkGf_DZXKZORD-HY52DTVqn0"
+        />
+        <meta
+          name="description"
+          content="Hi there! I'm Sefufim Alvarez, a Fullstack Developer. This is my website where I share my journey in web development. Join me as I bring ideas to life through code and creativity."
+        />
+        <meta
+          name="og:description"
+          content="Hi there! I'm Sefufim Alvarez, a Fullstack Developer. This is my website where I share my journey in web development. Join me as I bring ideas to life through code and creativity."
+        />
+        <meta
+          name="twitter:description"
+          content="Hi there! I'm Sefufim Alvarez, a Fullstack Developer. This is my website where I share my journey in web development. Join me as I bring ideas to life through code and creativity."
+        />
+        <meta
+          name="keyword"
+          content="portfolio, typescript, developer, react, nextjs"
+        />
+        <meta
+          name="google-site-verification"
+          content="Z94gNptf5Vpn91g8H3nlkGf_DZXKZORD-HY52DTVqn0"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

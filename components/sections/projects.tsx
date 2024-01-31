@@ -19,7 +19,7 @@ export default function ProjectDisplay() {
         duration: () => window.innerWidth < 640 ? '.5' : '1',
         scrollTrigger: {
           trigger: el,
-          start: () => window.innerWidth < 640 ? 'top center' : '35% center',
+          start: () => window.innerWidth < 640 ? 'top center' : ' center',
           end: 'bottom center',
           toggleActions: 'play',
           markers: false,

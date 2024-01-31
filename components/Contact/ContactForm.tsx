@@ -65,7 +65,7 @@ export default function ContactForm() {
         <div className="mb-4">
           <label
             className="block text-white text-sm font-bold mb-2"
-            htmlFor="name"
+            htmlFor="fullName"
           >
             Name
           </label>
@@ -82,7 +82,7 @@ export default function ContactForm() {
         <div className="mb-4">
           <label
             className="block text-white text-sm font-bold mb-2"
-            htmlFor="email"
+            htmlFor="email_id"
           >
             Email
           </label>
@@ -99,7 +99,7 @@ export default function ContactForm() {
         <div className="mb-6">
           <label
             className="block text-white text-sm font-bold mb-2"
-            htmlFor="message"
+            htmlFor="Message"
           >
             Message
           </label>
@@ -133,7 +133,7 @@ export default function ContactForm() {
           <div className="block md:hidden">
           <PacmanLoader color="black" size={13} />
           </div>
-         <div className="px-[2rem]"> {status}</div>
+         <div className="px-[2rem] md:text-5xl"> {status}</div>
         </div>
       </motion.div>
     </div>
