@@ -16,7 +16,6 @@ export default function About() {
         <p className="text-2xl xs:text-4xl lg:text-7xl font-bold text-black mt-[4rem] lg:mt-[5rem] 3xl:mt-[10rem]">
           About Me
         </p>
-        
       </div>
       <hr className="w-[100%] h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700"></hr>
       <div className="flex flex-col min-h-screen lg:flex-row justify-center lg:mt-[5rem] gap-8 items-center mt-[2rem] ">
@@ -35,16 +34,15 @@ export default function About() {
             multiple times, I discovered computer science and have been sold
             ever since. I thrive in collaborative environments and enjoy working
             with teams to solve challenges. At the moment, I&apos;m studying
-            computer science at Western Oregon University and completing a
+            computer science at Portland State University and have completed a
             coding boot camp at the University of Oregon.
           </p>
 
           <p className="lg:mb-4">
-            In terms of roles, I&apos;m passionate about roles that involve
-            innovative software development, particularly in Fullstack
-            development or software engineering. I&apos;m interested in freelance
-            work as it allows me to leverage my skills in a diverse range of
-            projects while delivering high-quality solutions to clients.
+            I&apos;m currently open to new opportunities! If you&apos;re
+            interested in collaborating or working together, feel free to reach
+            out! Whether it&apos;s a potential project, freelance work, or just
+            a friendly chat, I&apos;m always excited to connect.
           </p>
 
           <div className="flex items-center mt-10 mb-5 ">
@@ -53,7 +51,6 @@ export default function About() {
                 Resume <TfiDownload />
               </Button>
             </a>
-           
           </div>
         </div>
       </div>
