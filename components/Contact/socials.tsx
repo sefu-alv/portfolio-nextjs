@@ -9,7 +9,7 @@ export default function Socials () {
           </div>
             <div className="w-full">
                     <h1 className="text-5xl font-extrabold">Let&apos;s Talk</h1>
-                    <p className="mt-3">Got any ideas or brand you want developed? If so I&apos;d love to hear about it. </p>
+                    <p className="mt-3">Got any ideas or brands you want developed? If so, I&apos;d love to hear about it! </p>
             </div>
            
             <div className="w-full text-4xl font-bold">
