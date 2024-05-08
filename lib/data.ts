@@ -49,13 +49,13 @@ export const projectsData = [
     liveUrl: "https://desolate-sea-54298-2d2f1e6b62d8.herokuapp.com/",
   },
   {
-    title: "Weather App",
+    title: "Weather App (currently under maintenance)",
     description:
       "This website provides users with real-time weather updates and a comprehensive 5-day forecast. Developed using Bootstrap as its CSS framework, the site seamlessly integrates JavaScript and APIs, ensuring a simple yet effective experience for users to stay updated on weather conditions",
     tags: ["HTML", "CSS", "JavaScript", "API"],
     imageUrl: "/weather.svg",
     repoUrl: "https://github.com/sefu-alv/weather-forecast",
-    liveUrl: "https://sefu-alv.github.io/weather-forecast/",
+    liveUrl: "https://github.com/sefu-alv/weather-forecast",
   },
   {
     title: "Note Taker",
